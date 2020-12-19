@@ -8,11 +8,13 @@
 		box-sizing: border-box;
 		background-color: lightgrey;
 	}
+	div {
+		float: left;
+	}
 	#verde {
 		border: 5px solid black;
 		padding: 20px;
-		margin: 30px;
-		width: 300px;
+		width: 49%;
 		height: 90px;
 		background-color: lightgreen;
 		overflow: auto;
@@ -20,12 +22,24 @@
 	#azul {
 		background-color: lightblue;
 	}
+	.imagen {
+		font-size: 70%;
+		width: 500px;
+		height: 500px;
+		background: url("misifus.jpg") no-repeat top left;
+		position: relative;
+		top: 10px;
+	}
+	.segundo {
+		position: relative;
+		left: 2%;
+	}
 </style>
 </head>
 <body>
 	<h1>Cajas</h1>
     <div id="verde"><div id="azul">Esta es una caja</div></div>
-    <h2> Esta es otra caja</h2>
-    <div id="verde"><div id="azul">Esta ahora si es la caja, mucho texto para poder ver si puedo ponerle la propiedad que indica que se tiene una barra para deslizar el contenido hacia abajo</div></div>
+    <div id="verde" class="segundo"><div id="azul">Esta ahora si es la caja, mucho texto para poder ver si puedo ponerle la propiedad que indica que se tiene una barra para deslizar el contenido hacia abajo. Seguire aumentando contenido en esta caja hasta que tenga las suficientes palabras como para que necesite que haya una opción de barra deslizadora. Gracias por su atención uwu</div></div>
+    <div class="imagen"> Ahora veremos si podemos poner una imagen de un gato aquí</div>
 </body>
 </html>
